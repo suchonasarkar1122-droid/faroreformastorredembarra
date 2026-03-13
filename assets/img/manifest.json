@@ -1,0 +1,178 @@
+[
+  {
+    "src": "COCINAMODERNA.png",
+    "name": "reforma-cocina-moderna-torredembarra",
+    "alt": "Reforma de cocina moderna en Torredembarra",
+    "category": "cocina",
+    "fullPath": "/assets/img/reforma-cocina-moderna-torredembarra.webp",
+    "thumbPath": "/assets/img/reforma-cocina-moderna-torredembarra-thumb.webp"
+  },
+  {
+    "src": "closeup-details-of-grey-and-white-modern-classic-k-2024-10-18-05-30-11-utc.jpg",
+    "name": "cocina-diseno-gris-blanca-torredembarra",
+    "alt": "Cocina de diseno en gris y blanco reformada en Torredembarra",
+    "category": "cocina",
+    "fullPath": "/assets/img/cocina-diseno-gris-blanca-torredembarra.webp",
+    "thumbPath": "/assets/img/cocina-diseno-gris-blanca-torredembarra-thumb.webp"
+  },
+  {
+    "src": "light-kitchen-with-contemporary-furniture-2025-02-09-22-38-45-utc.webp",
+    "name": "cocina-luminosa-muebles-modernos",
+    "alt": "Cocina luminosa con muebles modernos tras reforma",
+    "category": "cocina",
+    "fullPath": "/assets/img/cocina-luminosa-muebles-modernos.webp",
+    "thumbPath": "/assets/img/cocina-luminosa-muebles-modernos-thumb.webp"
+  },
+  {
+    "src": "open-kitchen-and-living-room-in-luxury-house-2025-10-03-14-08-17-utc.webp",
+    "name": "cocina-abierta-salon-reforma-integral",
+    "alt": "Cocina abierta al salon en reforma integral de vivienda",
+    "category": "cocina",
+    "fullPath": "/assets/img/cocina-abierta-salon-reforma-integral.webp",
+    "thumbPath": "/assets/img/cocina-abierta-salon-reforma-integral-thumb.webp"
+  },
+  {
+    "src": "bathroom-interior-in-natural-boho-style-2025-03-14-06-49-46-utc.webp",
+    "name": "reforma-bano-estilo-natural-torredembarra",
+    "alt": "Reforma de bano con estilo natural en Torredembarra",
+    "category": "bano",
+    "fullPath": "/assets/img/reforma-bano-estilo-natural-torredembarra.webp",
+    "thumbPath": "/assets/img/reforma-bano-estilo-natural-torredembarra-thumb.webp"
+  },
+  {
+    "src": "bathroom-renovation-concept-2025-03-15-18-44-04-utc.JPG",
+    "name": "reforma-bano-completa-antes-despues",
+    "alt": "Reforma completa de bano antes y despues",
+    "category": "bano",
+    "fullPath": "/assets/img/reforma-bano-completa-antes-despues.webp",
+    "thumbPath": "/assets/img/reforma-bano-completa-antes-despues-thumb.webp"
+  },
+  {
+    "src": "bañor.webp",
+    "name": "bano-moderno-reformado-torredembarra",
+    "alt": "Bano moderno reformado por FARO en Torredembarra",
+    "category": "bano",
+    "fullPath": "/assets/img/bano-moderno-reformado-torredembarra.webp",
+    "thumbPath": "/assets/img/bano-moderno-reformado-torredembarra-thumb.webp"
+  },
+  {
+    "src": "modern-bathroom-interior-with-glass-shower-wooden-2025-02-10-06-22-59-utc.jpg",
+    "name": "bano-ducha-cristal-madera-reforma",
+    "alt": "Bano con ducha de cristal y acabados en madera",
+    "category": "bano",
+    "fullPath": "/assets/img/bano-ducha-cristal-madera-reforma.webp",
+    "thumbPath": "/assets/img/bano-ducha-cristal-madera-reforma-thumb.webp"
+  },
+  {
+    "src": "modern-clean-bathroom-with-toilet-and-sink-2024-10-18-03-34-14-utc.jpg",
+    "name": "bano-limpio-moderno-sanitarios-nuevos",
+    "alt": "Bano moderno con sanitarios nuevos tras reforma",
+    "category": "bano",
+    "fullPath": "/assets/img/bano-limpio-moderno-sanitarios-nuevos.webp",
+    "thumbPath": "/assets/img/bano-limpio-moderno-sanitarios-nuevos-thumb.webp"
+  },
+  {
+    "src": "full-set-of-empty-renovated-apartment-in-montreal-2025-10-15-04-52-47-utc.jpg",
+    "name": "reforma-integral-piso-completo-torredembarra",
+    "alt": "Reforma integral de piso completo en Torredembarra",
+    "category": "integral",
+    "fullPath": "/assets/img/reforma-integral-piso-completo-torredembarra.webp",
+    "thumbPath": "/assets/img/reforma-integral-piso-completo-torredembarra-thumb.webp"
+  },
+  {
+    "src": "indoor.png",
+    "name": "interior-vivienda-reformada-torredembarra",
+    "alt": "Interior de vivienda reformada en Torredembarra",
+    "category": "integral",
+    "fullPath": "/assets/img/interior-vivienda-reformada-torredembarra.webp",
+    "thumbPath": "/assets/img/interior-vivienda-reformada-torredembarra-thumb.webp"
+  },
+  {
+    "src": "salonr.jpg",
+    "name": "salon-reformado-diseno-moderno",
+    "alt": "Salon reformado con diseno moderno",
+    "category": "integral",
+    "fullPath": "/assets/img/salon-reformado-diseno-moderno.webp",
+    "thumbPath": "/assets/img/salon-reformado-diseno-moderno-thumb.webp"
+  },
+  {
+    "src": "salonr2.png",
+    "name": "salon-luminoso-reforma-integral",
+    "alt": "Salon luminoso tras reforma integral de vivienda",
+    "category": "integral",
+    "fullPath": "/assets/img/salon-luminoso-reforma-integral.webp",
+    "thumbPath": "/assets/img/salon-luminoso-reforma-integral-thumb.webp"
+  },
+  {
+    "src": "spacious-apartment-interior-of-kitchen-and-corri-2025-10-03-10-47-17-utc.jpg",
+    "name": "reforma-piso-cocina-pasillo-amplio",
+    "alt": "Piso reformado con cocina y pasillo amplio",
+    "category": "integral",
+    "fullPath": "/assets/img/reforma-piso-cocina-pasillo-amplio.webp",
+    "thumbPath": "/assets/img/reforma-piso-cocina-pasillo-amplio-thumb.webp"
+  },
+  {
+    "src": "studio-apartment-interior-with-wooden-furniture-2025-02-09-23-24-37-utc.jpg",
+    "name": "apartamento-reformado-muebles-madera",
+    "alt": "Apartamento reformado con muebles de madera",
+    "category": "integral",
+    "fullPath": "/assets/img/apartamento-reformado-muebles-madera.webp",
+    "thumbPath": "/assets/img/apartamento-reformado-muebles-madera-thumb.webp"
+  },
+  {
+    "src": "construction-worker-2024-11-03-02-20-55-utc.jpg",
+    "name": "equipo-profesional-reformas-torredembarra",
+    "alt": "Equipo profesional de reformas trabajando en Torredembarra",
+    "category": "obra",
+    "fullPath": "/assets/img/equipo-profesional-reformas-torredembarra.webp",
+    "thumbPath": "/assets/img/equipo-profesional-reformas-torredembarra-thumb.webp"
+  },
+  {
+    "src": "laying-tile-trowel-in-a-preparation-for-laying-ti-2025-03-27-06-12-59-utc.jpg",
+    "name": "colocacion-azulejos-reforma-bano",
+    "alt": "Colocacion profesional de azulejos en reforma de bano",
+    "category": "obra",
+    "fullPath": "/assets/img/colocacion-azulejos-reforma-bano.webp",
+    "thumbPath": "/assets/img/colocacion-azulejos-reforma-bano-thumb.webp"
+  },
+  {
+    "src": "older-man-disassembling-apartment-kitchen-out-of-s-2025-01-11-03-38-27-utc.jpg",
+    "name": "demolicion-cocina-reforma-integral",
+    "alt": "Demolicion de cocina antigua para reforma integral",
+    "category": "obra",
+    "fullPath": "/assets/img/demolicion-cocina-reforma-integral.webp",
+    "thumbPath": "/assets/img/demolicion-cocina-reforma-integral-thumb.webp"
+  },
+  {
+    "src": "two-builders-cutting-plasterboard-for-a-kitchen-u-2025-04-03-23-28-51-utc.jpg",
+    "name": "instalacion-pladur-cocina-reforma",
+    "alt": "Instalacion de pladur para reforma de cocina",
+    "category": "obra",
+    "fullPath": "/assets/img/instalacion-pladur-cocina-reforma.webp",
+    "thumbPath": "/assets/img/instalacion-pladur-cocina-reforma-thumb.webp"
+  },
+  {
+    "src": "pinturainterior.jpg",
+    "name": "pintura-interior-reforma-piso-torredembarra",
+    "alt": "Pintura interior en reforma de piso en Torredembarra",
+    "category": "obra",
+    "fullPath": "/assets/img/pintura-interior-reforma-piso-torredembarra.webp",
+    "thumbPath": "/assets/img/pintura-interior-reforma-piso-torredembarra-thumb.webp"
+  },
+  {
+    "src": "locales.png",
+    "name": "reforma-local-comercial-torredembarra",
+    "alt": "Reforma de local comercial en Torredembarra",
+    "category": "local",
+    "fullPath": "/assets/img/reforma-local-comercial-torredembarra.webp",
+    "thumbPath": "/assets/img/reforma-local-comercial-torredembarra-thumb.webp"
+  },
+  {
+    "src": "localr.png",
+    "name": "local-reformado-diseno-interior-torredembarra",
+    "alt": "Local reformado con diseno interior profesional en Torredembarra",
+    "category": "local",
+    "fullPath": "/assets/img/local-reformado-diseno-interior-torredembarra.webp",
+    "thumbPath": "/assets/img/local-reformado-diseno-interior-torredembarra-thumb.webp"
+  }
+]

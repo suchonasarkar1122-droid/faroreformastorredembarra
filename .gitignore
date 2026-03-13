@@ -1,0 +1,5 @@
+.claude/
+.agent/
+.agents/
+.trae/
+skills-lock.json

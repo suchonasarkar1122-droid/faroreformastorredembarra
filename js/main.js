@@ -162,47 +162,71 @@ document.addEventListener('DOMContentLoaded', () => {
     const formStartTime = Date.now();
     contactForm.dataset.startTime = formStartTime;
 
-    // Form submission
-    contactForm.addEventListener('submit', (e) => {
+    // Form submission: email through Formspree + mirrored lead in CoreLeads.
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
-      // Anti-spam: check if form was filled too quickly (< 3 seconds = bot)
       const elapsed = Date.now() - parseInt(contactForm.dataset.startTime);
-      if (elapsed < 3000) {
-        console.warn('Form submitted too quickly');
-        return;
-      }
+      if (elapsed < 3000) return;
 
-      // Validate phone (Spanish format)
       const phone = phoneInput ? phoneInput.value.replace(/\s/g, '') : '';
       if (phone.length < 9) {
         phoneInput.focus();
         phoneInput.style.borderColor = '#ef4444';
         const note = phoneInput.closest('.form-group')?.querySelector('.phone-note');
         if (note) note.style.color = '#ef4444';
-        setTimeout(() => {
-          phoneInput.style.borderColor = '';
-          if (note) note.style.color = '';
-        }, 3000);
+        setTimeout(() => { phoneInput.style.borderColor = ''; if (note) note.style.color = ''; }, 3000);
         return;
       }
 
-      // Show success message
-      const formEl = contactForm.querySelector('.form-fields') || contactForm;
-      const successEl = contactForm.querySelector('.form-success') || document.querySelector('.form-success');
-
-      if (successEl) {
-        formEl.style.display = 'none';
-        successEl.style.display = 'block';
+      const button = contactForm.querySelector('button[type="submit"]');
+      if (button) button.disabled = true;
+      let errorEl = contactForm.querySelector('.form-error');
+      if (!errorEl) {
+        errorEl = document.createElement('p');
+        errorEl.className = 'form-error';
+        errorEl.style.cssText = 'display:none;color:#b91c1c;font-weight:700;margin-top:12px;text-align:center';
+        (contactForm.querySelector('.form-fields') || contactForm).appendChild(errorEl);
       }
+      errorEl.style.display = 'none';
 
-      // Collect form data
-      const formData = new FormData(contactForm);
-      const data = Object.fromEntries(formData.entries());
-      console.log('Form submission:', data);
+      const emailData = new FormData(contactForm);
+      emailData.set('_subject', `Nuevo presupuesto desde ${location.hostname}`);
+      emailData.set('website', location.origin);
+      emailData.set('brand', 'FARO Reformas Torredembarra');
+      emailData.set('sector', 'Reformas');
 
-      // TODO: Replace with actual form submission endpoint
-      // fetch('/api/contact', { method: 'POST', body: JSON.stringify(data), headers: {'Content-Type': 'application/json'} })
+      const crmData = new FormData();
+      crmData.set('name', emailData.get('nombre') || '');
+      crmData.set('phone', String(emailData.get('teléfono') || '').replace(/[^\d+]/g, ''));
+      crmData.set('email', emailData.get('email') || '');
+      crmData.set('city', emailData.get('localidad') || '');
+      crmData.set('service', emailData.get('servicio') || '');
+      crmData.set('message', emailData.get('mensaje') || '');
+      crmData.set('sector', 'Reformas');
+      crmData.set('website', location.origin);
+      crmData.set('page_url', location.href);
+      crmData.set('brand', 'FARO Reformas Torredembarra');
+      crmData.set('consent', 'accepted');
+      crmData.set('submission_id', crypto.randomUUID());
+
+      fetch('https://coreleads.es/api/in/f823c51598b8a55e67aba41fe8ab8b1cb366e2403595ca17aa8f4313672b8ccc/lead/web', { method: 'POST', body: crmData, mode: 'no-cors', keepalive: true }).catch(() => null);
+
+      try {
+        const response = await fetch('https://formspree.io/f/xyklqlvv', {
+          method: 'POST',
+          body: emailData,
+          headers: { Accept: 'application/json' }
+        });
+        if (!response.ok) throw new Error('Email provider rejected submission');
+        const formEl = contactForm.querySelector('.form-fields') || contactForm;
+        const successEl = contactForm.querySelector('.form-success') || document.querySelector('.form-success');
+        if (successEl) { formEl.style.display = 'none'; successEl.style.display = 'block'; }
+      } catch {
+        errorEl.textContent = 'No hemos podido enviar la solicitud. Inténtalo de nuevo o llámanos al 623 760 710.';
+        errorEl.style.display = 'block';
+        if (button) button.disabled = false;
+      }
     });
   }
 

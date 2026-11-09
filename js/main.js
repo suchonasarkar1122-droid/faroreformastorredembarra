@@ -147,7 +147,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (phoneInput) {
       phoneInput.addEventListener('input', (e) => {
         let value = e.target.value.replace(/\D/g, '');
-        if (value.length > 9) value = value.slice(0, 9);
+        // Remove Spain's country code only when followed by a complete national number.
+        // Never truncate extra digits: leave invalid numbers intact for validation.
+        value = value.replace(/^(?:0034|34)(\d{9})$/, '$1');
         // Format: XXX XXX XXX
         if (value.length > 6) {
           value = value.slice(0, 3) + ' ' + value.slice(3, 6) + ' ' + value.slice(6);
@@ -170,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (elapsed < 3000) return;
 
       const phone = phoneInput ? phoneInput.value.replace(/\s/g, '') : '';
-      if (phone.length < 9) {
+      if (!/^\d{9}$/.test(phone)) {
         phoneInput.focus();
         phoneInput.style.borderColor = '#ef4444';
         const note = phoneInput.closest('.form-group')?.querySelector('.phone-note');

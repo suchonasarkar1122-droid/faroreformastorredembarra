@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const successEl = contactForm.querySelector('.form-success') || document.querySelector('.form-success');
         if (successEl) { formEl.style.display = 'none'; successEl.style.display = 'block'; }
       } catch {
-        errorEl.textContent = 'No hemos podido enviar la solicitud. Inténtalo de nuevo o llámanos al 623 760 710.';
+        errorEl.textContent = 'No hemos podido enviar la solicitud. Inténtalo de nuevo o llámanos al 877 27 81 30.';
         errorEl.style.display = 'block';
         if (button) button.disabled = false;
       }
